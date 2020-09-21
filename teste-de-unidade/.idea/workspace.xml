@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc90c347-d9e7-4368-bafe-0c18fee9751e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/leilaoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/com/caelum/leilao/dominio/Leilao.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/caelum/leilao/dominio/Leilao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/com/caelum/leilao/dominio/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/caelum/leilao/dominio/Usuario.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/br/com/caelum/leilao/servico/Avaliador.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/caelum/leilao/servico/Avaliador.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/br/com/caelum/leilao/teste/TesteAvaliador.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/caelum/leilao/teste/TesteAvaliador.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/leilao/servico/Avaliador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/leilao/servico/Avaliador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/leilao/teste/TesteAvaliador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/leilao/teste/TesteAvaliador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/leilao/dominio/Leilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/leilao/dominio/Leilao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/leilao/dominio/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/leilao/dominio/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/teste-de-unidade.iml" beforeDir="false" afterPath="$PROJECT_DIR$/teste-de-unidade.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,92 +41,101 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="br.com.caelum.leilao.dominio" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.caelum.leilao.servico" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\Curso_Testes\TestesTDD\teste-de-unidade\test" />
+      <recent name="C:\Users\User\Documents\Curso_Testes\TestesTDD\teste-de-unidade" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.TesteAvaliador">
-    <configuration name="TesteAvaliador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.leilaoTest.naoDeveAceitarMaisDeCincoLancesDeUmMesmoUsuario">
+    <configuration name="leilaoTest.deveReceberUmLance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teste-de-unidade" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.caelum.leilao.teste.*" />
+          <option name="PATTERN" value="br.com.caelum.leilao.dominio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.teste" />
-      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.teste.TesteAvaliador" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TesteAvaliador.deveDevolverListaVaziaCasoNaoHajaLances" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="teste-de-unidade" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.caelum.leilao.teste.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.teste" />
-      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.teste.TesteAvaliador" />
-      <option name="METHOD_NAME" value="deveDevolverListaVaziaCasoNaoHajaLances" />
+      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.dominio" />
+      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.dominio.leilaoTest" />
+      <option name="METHOD_NAME" value="deveReceberUmLance" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteAvaliador.deveDevolverTodosLancesCasoNaoHajaNoMinimo3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="leilaoTest.deveReceberVariosValores" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teste-de-unidade" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.caelum.leilao.teste.*" />
+          <option name="PATTERN" value="br.com.caelum.leilao.dominio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.teste" />
-      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.teste.TesteAvaliador" />
-      <option name="METHOD_NAME" value="deveDevolverTodosLancesCasoNaoHajaNoMinimo3" />
+      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.dominio" />
+      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.dominio.leilaoTest" />
+      <option name="METHOD_NAME" value="deveReceberVariosValores" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteAvaliador.deveEntenderLeilaoComLancesEmOrdemDecrescente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="leilaoTest.naoDeveAceitarDoisLancesSeguidosDoMesmoUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teste-de-unidade" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.caelum.leilao.teste.*" />
+          <option name="PATTERN" value="br.com.caelum.leilao.dominio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.teste" />
-      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.teste.TesteAvaliador" />
-      <option name="METHOD_NAME" value="deveEntenderLeilaoComLancesEmOrdemDecrescente" />
+      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.dominio" />
+      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.dominio.leilaoTest" />
+      <option name="METHOD_NAME" value="naoDeveAceitarDoisLancesSeguidosDoMesmoUsuario" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TesteAvaliador.deveEntenderLeilaoComLancesEmOrdemRandomica" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="leilaoTest.naoDeveAceitarDoisLancesSeguidossDoMesmoUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teste-de-unidade" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.caelum.leilao.teste.*" />
+          <option name="PATTERN" value="br.com.caelum.leilao.dominio.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.teste" />
-      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.teste.TesteAvaliador" />
-      <option name="METHOD_NAME" value="deveEntenderLeilaoComLancesEmOrdemRandomica" />
+      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.dominio" />
+      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.dominio.leilaoTest" />
+      <option name="METHOD_NAME" value="naoDeveAceitarDoisLancesSeguidossDoMesmoUsuario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="leilaoTest.naoDeveAceitarMaisDeCincoLancesDeUmMesmoUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teste-de-unidade" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.caelum.leilao.dominio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.dominio" />
+      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.dominio.leilaoTest" />
+      <option name="METHOD_NAME" value="naoDeveAceitarMaisDeCincoLancesDeUmMesmoUsuario" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TesteAvaliador" />
-        <item itemvalue="JUnit.TesteAvaliador.deveDevolverListaVaziaCasoNaoHajaLances" />
-        <item itemvalue="JUnit.TesteAvaliador.deveDevolverTodosLancesCasoNaoHajaNoMinimo3" />
-        <item itemvalue="JUnit.TesteAvaliador.deveEntenderLeilaoComLancesEmOrdemDecrescente" />
-        <item itemvalue="JUnit.TesteAvaliador.deveEntenderLeilaoComLancesEmOrdemRandomica" />
+        <item itemvalue="JUnit.leilaoTest.naoDeveAceitarMaisDeCincoLancesDeUmMesmoUsuario" />
+        <item itemvalue="JUnit.leilaoTest.naoDeveAceitarDoisLancesSeguidosDoMesmoUsuario" />
+        <item itemvalue="JUnit.leilaoTest.naoDeveAceitarDoisLancesSeguidossDoMesmoUsuario" />
+        <item itemvalue="JUnit.leilaoTest.deveReceberVariosValores" />
+        <item itemvalue="JUnit.leilaoTest.deveReceberUmLance" />
       </list>
     </recent_temporary>
   </component>
@@ -154,53 +165,101 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1600135468364">
+    <state x="275" y="23" key="#Auto_Import" timestamp="1600700829737">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1600135468364" />
+    <state x="275" y="23" key="#Auto_Import/0.0.1366.728@0.0.1366.728" timestamp="1600700829737" />
+    <state x="275" y="23" key="#Project_Structure" timestamp="1600700171059">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="23" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1600700171059" />
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1600710276936">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="92" y="92" width="1182" height="544" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.728@0.0.1366.728" timestamp="1600710276936" />
+    <state x="458" y="168" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600700542817">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="458" y="168" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1600700542817" />
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1600700767417">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1600700767417" />
     <state x="531" y="254" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1600132834025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="531" y="254" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1600132834025" />
+    <state x="317" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1600700575651">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="317" y="290" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1600700575651" />
+    <state x="479" y="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1600700584485">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="479" y="245" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1366.728@0.0.1366.728" timestamp="1600700584485" />
     <state x="385" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600218905788">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="385" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1600218905788" />
-    <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600219487587">
+    <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600700493383">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600219487587" />
-    <state width="1323" height="224" key="GridCell.Tab.0.bottom" timestamp="1600219624347">
+    <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600700493383" />
+    <state width="1323" height="168" key="GridCell.Tab.0.bottom" timestamp="1600713486441">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="224" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600219624347" />
-    <state width="1323" height="224" key="GridCell.Tab.0.center" timestamp="1600219624347">
+    <state width="1323" height="168" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600713486441" />
+    <state width="1323" height="168" key="GridCell.Tab.0.center" timestamp="1600713486440">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="224" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600219624347" />
-    <state width="1323" height="224" key="GridCell.Tab.0.left" timestamp="1600219624347">
+    <state width="1323" height="168" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600713486440" />
+    <state width="1323" height="168" key="GridCell.Tab.0.left" timestamp="1600713486440">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="224" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600219624347" />
-    <state width="1323" height="224" key="GridCell.Tab.0.right" timestamp="1600219624347">
+    <state width="1323" height="168" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600713486440" />
+    <state width="1323" height="168" key="GridCell.Tab.0.right" timestamp="1600713486441">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="224" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600219624347" />
+    <state width="1323" height="168" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600713486441" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1600712750823">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600712750823" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1600712750823">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1600712750823" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1600712750823">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1600712750823" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1600712750823">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1600712750823" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1600135377186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600135377186" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1600214243993">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1600697241692">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1600214243993" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1600697241692" />
     <state x="387" y="258" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1600135349863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="387" y="258" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1600135349863" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600135413074">
+    <state x="676" y="127" width="540" height="496" key="extract.method.dialog" timestamp="1600713385063">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1600135413074" />
+    <state x="676" y="127" width="540" height="496" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1600713385063" />
+    <state x="65" y="0" key="new project wizard" timestamp="1600699978763">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1600699978763" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600709481802">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1600709481802" />
   </component>
 </project>
