@@ -1,5 +1,8 @@
-package br.com.caelum.leilao.dominio;
+package br.com.caelum.leilao.test;
 
+import br.com.caelum.leilao.dominio.Lance;
+import br.com.caelum.leilao.dominio.Leilao;
+import br.com.caelum.leilao.dominio.Usuario;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -43,7 +46,7 @@ public class leilaoTest {
     }
 
     @Test
-    public void naoDeveAceitarMaisDeCincoLancesDeUmMesmoUsuario(){
+    public void naoDeveAceitarMaisDeCincoLancesDeUmMesmoUsuario() {
         Leilao leilao = new Leilao("Carro");
 
         leilao.propoe(new Lance(gabriel, 13000.0));
@@ -65,6 +68,24 @@ public class leilaoTest {
         leilao.propoe(new Lance(gabriel, 23000.0));
 
         assertEquals(10, leilao.getLances().size());
-        assertEquals(22000.0, leilao.getLances().get(leilao.getLances().size()-1).getValor(), 0.00001);
+        assertEquals(22000.0, leilao.getLances().get(leilao.getLances().size() - 1).getValor(), 0.00001);
+    }
+
+    @Test
+    public void deveDobrarOUltimoLanceDado() {
+        Leilao leilao = new Leilao("Notebook Acer");
+
+        leilao.propoe(new Lance(gabriel, 1200.0));
+        leilao.propoe(new Lance(bill, 1200.0));
+        leilao.dobraLance(gabriel);
+
+        assertEquals(2400.0, leilao.getLances().get(2).getValor(), 0.00001);
+    }
+
+    @Test
+    public void naoDeveDobrarCasoNaoHajaLanceAnterior() {
+        Leilao leilao = new Leilao("Macbook Pro 15");
+        leilao.dobraLance(steveJobs);
+        assertEquals(0, leilao.getLances().size());
     }
 }
