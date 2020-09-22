@@ -3,12 +3,16 @@ package br.com.caelum.leilao.test;
 import br.com.caelum.leilao.builder.CriadorDeLeilao;
 import br.com.caelum.leilao.dominio.*;
 import br.com.caelum.leilao.servico.Avaliador;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.List;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.hasItems;
 import static org.junit.Assert.assertEquals;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class TesteAvaliador {
 
@@ -29,6 +33,13 @@ public class TesteAvaliador {
         this.ellen = new Usuario("Ellen");
     }
 
+    @Test(expected = RuntimeException.class)
+    public void naoDeveAvaliarLeilaoSemLance() {
+        Leilao leilao = new CriadorDeLeilao().para("Fusca").constroi();
+
+        leiloeiro.avalia(leilao);
+    }
+
     @Test
     public void deveEntenderLancesEmOrdemCrescente() {
         Leilao leilao = new CriadorDeLeilao().para("Playtation 5 Novo")
@@ -40,11 +51,9 @@ public class TesteAvaliador {
 
         leiloeiro.avalia(leilao);
 
-        double maiorEsperado = 4000.0;
-        double menorEsperado = 1000.0;
+        assertThat(leiloeiro.getMaiorLance(), equalTo(4000.0));
+        assertThat(leiloeiro.getMenorLance(), equalTo(1000.0));
 
-        assertEquals(maiorEsperado, leiloeiro.getMaiorLance(), 0.000001);
-        assertEquals(menorEsperado, leiloeiro.getMenorLance(), 0.000001);
     }
 
     @Test
@@ -55,8 +64,8 @@ public class TesteAvaliador {
 
         leiloeiro.avalia(leilao);
 
-        assertEquals(1000.0, leiloeiro.getMaiorLance(), 0.000001);
-        assertEquals(1000.0, leiloeiro.getMenorLance(), 0.000001);
+        assertThat(leiloeiro.getMaiorLance(), equalTo(1000.0));
+        assertThat(leiloeiro.getMenorLance(), equalTo(1000.0));
     }
 
     @Test
@@ -72,9 +81,12 @@ public class TesteAvaliador {
 
         List<Lance> maiores = leiloeiro.getTresMaiores();
         assertEquals(3, maiores.size());
-        assertEquals(400.0, maiores.get(0).getValor(), 0.000001);
-        assertEquals(300.0, maiores.get(1).getValor(), 0.000001);
-        assertEquals(200.0, maiores.get(2).getValor(), 0.000001);
+
+        assertThat(maiores, hasItems(
+                new Lance(maria, 400),
+                new Lance(joao, 300),
+                new Lance(maria, 200)
+        ));
     }
 
     @Test
@@ -90,8 +102,8 @@ public class TesteAvaliador {
 
         leiloeiro.avalia(leilao);
 
-        assertEquals(700.0, leiloeiro.getMaiorLance(), 0.0001);
-        assertEquals(120.0, leiloeiro.getMenorLance(), 0.0001);
+        assertThat(leiloeiro.getMaiorLance(), equalTo(700.0));
+        assertThat(leiloeiro.getMenorLance(), equalTo(120.0));
     }
 
     @Test
@@ -104,11 +116,9 @@ public class TesteAvaliador {
                 .constroi();
 
         leiloeiro.avalia(monitor);
-        double maiorEsperado = 400.0;
-        double menorEsperado = 100.0;
 
-        assertEquals(maiorEsperado, leiloeiro.getMaiorLance(), 0.000001);
-        assertEquals(menorEsperado, leiloeiro.getMenorLance(), 0.000001);
+        assertThat(leiloeiro.getMaiorLance(), equalTo(400.0));
+        assertThat(leiloeiro.getMenorLance(), equalTo(100.0));
     }
 
     @Test
@@ -122,18 +132,25 @@ public class TesteAvaliador {
         List<Lance> maiores = leiloeiro.getTresMaiores();
 
         assertEquals(2, maiores.size());
+
         assertEquals(200, maiores.get(0).getValor(), 0.00001);
         assertEquals(100, maiores.get(1).getValor(), 0.00001);
     }
 
-    @Test
+    @Test(expected = RuntimeException.class)
     public void deveDevolverListaVaziaCasoNaoHajaLances() {
         Leilao leilao = new CriadorDeLeilao().para("Playstation 3 Novo").constroi();
 
         leiloeiro.avalia(leilao);
         List<Lance> maiores = leiloeiro.getTresMaiores();
 
-        assertEquals(0, maiores.size());
+        assertThat(maiores.size(), equalTo(0));
+//        assertEquals(0, maiores.size());
+    }
+
+    @After
+    public void finaliza() {
+        System.out.println("fim");
     }
 
 }

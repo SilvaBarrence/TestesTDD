@@ -22,6 +22,16 @@ public class leilaoTest {
         this.bill = new Usuario("Bill");
     }
 
+    @Test(expected = IllegalArgumentException.class)
+    public void deveRecusarLancesComValorDeZero() {
+        new Lance(gabriel, 0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void deveRecusarLancesComValorNegativo() {
+        new Lance(steveJobs, -10);
+    }
+
     @Test
     public void deveReceberUmLance() {
         Leilao leilao = new CriadorDeLeilao().para("Macbook Pro 15")
