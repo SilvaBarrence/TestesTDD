@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc90c347-d9e7-4368-bafe-0c18fee9751e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bin/TestesDosDesafios.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/br/com/caelum/leilao/desafios/AnoBissexto.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/com/caelum/leilao/desafios/AnoBissexto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/TestesDosDesafios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/br/com/caelum/leilao/builder/CriadorDeLeilao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/br/com/caelum/leilao/builder/CriadorDeLeilao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/br/com/caelum/leilao/dominio/Leilao.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/caelum/leilao/dominio/Leilao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/br/com/caelum/leilao/dominio/leilaoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/caelum/leilao/dominio/leilaoTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/caelum/leilao/dominio/Leilao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/caelum/leilao/dominio/Leilao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/br/com/caelum/leilao/dominio/leilaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/br/com/caelum/leilao/test/leilaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/br/com/caelum/leilao/test/TesteAvaliador.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/br/com/caelum/leilao/test/TesteAvaliador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/br/com/caelum/leilao/test/TesteAvaliador.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/br/com/caelum/leilao/test/TesteAvaliador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/br/com/caelum/leilao/test/leilaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/br/com/caelum/leilao/test/leilaoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +46,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.caelum.leilao.builder" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="br.com.caelum.leilao.dominio" />
     </key>
@@ -60,8 +60,8 @@
       <recent name="C:\Users\User\Documents\Curso_Testes\TestesTDD\teste-de-unidade" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TesteAvaliador">
-    <configuration name="TesteAvaliador" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TesteAvaliador.deveEntenderLancesEmOrdemCrescente">
+    <configuration name="TesteAvaliador.deveEntenderLancesEmOrdemCrescente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teste-de-unidade" />
       <extension name="coverage">
         <pattern>
@@ -71,41 +71,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="br.com.caelum.leilao.test" />
       <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.test.TesteAvaliador" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestesDosDesafios" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="teste-de-unidade" />
-      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.test" />
-      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.test.TestesDosDesafios" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestesDosDesafios.deveRetornarAnoBissexto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="teste-de-unidade" />
-      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.test" />
-      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.test.TestesDosDesafios" />
-      <option name="METHOD_NAME" value="deveRetornarAnoBissexto" />
+      <option name="METHOD_NAME" value="deveEntenderLancesEmOrdemCrescente" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestesDosDesafios.naoDeveRetornarAnoBissexto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="teste-de-unidade" />
-      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.test" />
-      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.test.TestesDosDesafios" />
-      <option name="METHOD_NAME" value="naoDeveRetornarAnoBissexto" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="leilaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="leilaoTest.deveDobrarOUltimoLanceDado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="teste-de-unidade" />
       <extension name="coverage">
         <pattern>
@@ -115,18 +87,67 @@
       </extension>
       <option name="PACKAGE_NAME" value="br.com.caelum.leilao.test" />
       <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.test.leilaoTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="deveDobrarOUltimoLanceDado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="leilaoTest.deveReceberVariosValores" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teste-de-unidade" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.caelum.leilao.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.test" />
+      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.test.leilaoTest" />
+      <option name="METHOD_NAME" value="deveReceberVariosValores" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="leilaoTest.naoDeveAceitarDoisLancesSeguidosDoMesmoUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teste-de-unidade" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.caelum.leilao.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.test" />
+      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.test.leilaoTest" />
+      <option name="METHOD_NAME" value="naoDeveAceitarDoisLancesSeguidosDoMesmoUsuario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="leilaoTest.naoDeveAceitarMaisDeCincoLancesDeUmMesmoUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="teste-de-unidade" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.caelum.leilao.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.caelum.leilao.test" />
+      <option name="MAIN_CLASS_NAME" value="br.com.caelum.leilao.test.leilaoTest" />
+      <option name="METHOD_NAME" value="naoDeveAceitarMaisDeCincoLancesDeUmMesmoUsuario" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TesteAvaliador" />
-        <item itemvalue="JUnit.TestesDosDesafios" />
-        <item itemvalue="JUnit.leilaoTest" />
-        <item itemvalue="JUnit.TestesDosDesafios.deveRetornarAnoBissexto" />
-        <item itemvalue="JUnit.TestesDosDesafios.naoDeveRetornarAnoBissexto" />
+        <item itemvalue="JUnit.TesteAvaliador.deveEntenderLancesEmOrdemCrescente" />
+        <item itemvalue="JUnit.leilaoTest.deveDobrarOUltimoLanceDado" />
+        <item itemvalue="JUnit.leilaoTest.naoDeveAceitarMaisDeCincoLancesDeUmMesmoUsuario" />
+        <item itemvalue="JUnit.leilaoTest.naoDeveAceitarDoisLancesSeguidosDoMesmoUsuario" />
+        <item itemvalue="JUnit.leilaoTest.deveReceberVariosValores" />
       </list>
     </recent_temporary>
   </component>
@@ -160,10 +181,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="458" y="168" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1600700542817" />
-    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1600700767417">
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser" timestamp="1600719628403">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1600700767417" />
+    <state x="488" y="74" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1600719628403" />
     <state x="531" y="254" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1600132834025">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -184,46 +205,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1600700493383" />
-    <state width="1323" height="161" key="GridCell.Tab.0.bottom" timestamp="1600717263574">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom" timestamp="1600795893556">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600717263574" />
-    <state width="1323" height="161" key="GridCell.Tab.0.center" timestamp="1600717263574">
+    <state width="1323" height="171" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600795893556" />
+    <state width="1323" height="171" key="GridCell.Tab.0.center" timestamp="1600795893556">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600717263574" />
-    <state width="1323" height="161" key="GridCell.Tab.0.left" timestamp="1600717263574">
+    <state width="1323" height="171" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600795893556" />
+    <state width="1323" height="171" key="GridCell.Tab.0.left" timestamp="1600795893556">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600717263574" />
-    <state width="1323" height="161" key="GridCell.Tab.0.right" timestamp="1600717263574">
+    <state width="1323" height="171" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600795893556" />
+    <state width="1323" height="171" key="GridCell.Tab.0.right" timestamp="1600795893556">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600717263574" />
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1600712750823">
+    <state width="1323" height="171" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600795893556" />
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom" timestamp="1600735375725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600712750823" />
-    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1600712750823">
+    <state width="1323" height="223" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600735375725" />
+    <state width="1323" height="223" key="GridCell.Tab.1.center" timestamp="1600735375725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1600712750823" />
-    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1600712750823">
+    <state width="1323" height="223" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1600735375725" />
+    <state width="1323" height="223" key="GridCell.Tab.1.left" timestamp="1600735375725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1600712750823" />
-    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1600712750823">
+    <state width="1323" height="223" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1600735375725" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right" timestamp="1600735375725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1600712750823" />
+    <state width="1323" height="223" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1600735375725" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1600135377186">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1600135377186" />
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1600697241692">
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog" timestamp="1600794538117">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1600697241692" />
+    <state x="379" y="189" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1600794538117" />
     <state x="387" y="258" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1600135349863">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
